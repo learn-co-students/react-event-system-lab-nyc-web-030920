@@ -3,17 +3,17 @@ import React, {Component} from 'React'
 
 class ChromeBoisDomain extends Component {
 
-  focus = () => {
+  handleFocus = () => {
     console.log('Good!')
   }
 
-  blur = () => {
+  handleBlur = () => {
     console.log('Hey! Eyes on me!')
   }
   render() {
     return (
       <div>
-        <button onFocus={this.focus} onBlur={this.blur} >
+        <button onFocus={this.handleFocus} onBlur={this.handleBlur} >
 
         </button>
       </div>
